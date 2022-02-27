@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9d62536be0.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/Principal.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <script src="/js/menuPegajoso.js" async="async"></script>
+    <!--<script src="/js/TemporizadorSlider.js"></script>-->
+    <title>JHQ Multiservicios - Inicio</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__contenedor--info">
+            <label class="encabezado__btnMenu" for="menu__check"><img src="/icon/Menu.png"></label>
+            <div class="encabezado__info">
+                <i class="encabezado__icon fas fa-phone-alt"></i>
+                <h4 class="encabezado__text">999 999 999</h4>
+            </div>
+            <div class="encabezado__info">
+                <i class="encabezado__icon fab fa-facebook-f"></i>
+                <h4 class="encabezado__text">JHQ Multiservicios</h4>
+            </div>
+            <div class="encabezado__info">
+                <i class="encabezado__icon fas fa-envelope-open-text"></i>
+                <h4 class="encabezado__text">JHQcontacto@gmail.com</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="menu" id="menu">
+        <picture class="menu__logo">
+            <a href="#"><img src="/svg/LogotipoJHQ2.svg" alt="JHQ Multiservicios"></a>
+        </picture>
+        <input id="menu__check" type="checkbox">
+        <span class="menu__sombra"></span>
+        <ul class="menu__contenedor--items">
+            <picture class="menu__contenedor--btncerrar">
+                <label class="menu__btncerrar--img" for="menu__check">
+                    <img src="/icon/MenuCancelar.png" alt="" srcset="">
+                </label>
+            </picture>
+            <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Nosotros</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Servicios</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
+        </ul>
+        <label class="menu__btnMenu" for="menu__check">
+            <img src="/icon/Menu.png">
+        </label>
+    </nav>
+    <div class="slider">
+        <div class="slider__slides">
+            <input type="radio" name="slider__radio" id="radio1">
+            <input type="radio" name="slider__radio" id="radio2">
+            <input type="radio" name="slider__radio" id="radio3">
+
+            <picture class="slider__contenedor-imagen firts">
+                <div class="slider__contenedor--info">
+                    <h2 class="slider__titulo">¿Qué es EPP?</h2>
+                    <p class="slider__parrafo">Los EPP son ideados para proteger al trabajador de uno o varios riesgos. Basicamente ofrecen seguridad para realizar una actividad laboral.</p>
+                    <input class="slider__boton" type="button" value="Ver más">
+                </div>
+                <img class="slider__imagen" src="/img/sld1.jpg" alt="epp">
+            </picture>
+            <picture class="slider__contenedor-imagen">
+                <div class="slider__contenedor--info">
+                    <h2 class="slider__titulo">Muebles para eventos</h2>
+                    <p class="slider__parrafo">Ofrecemos productos inmoviliarios de primer nivel, que mezclan creatividad, modernidad y elegancia, detalles que marcan la diferencia.</p>
+                    <input class="slider__boton" type="button" value="Ver más">
+                </div>
+                <img class="slider__imagen" src="/img/sld2.jpg" alt="alquiler mesas y sillas">
+            </picture>
+            <picture class="slider__contenedor-imagen">
+                <div class="slider__contenedor--info">
+                    <h2 class="slider__titulo">Tijeras de poda</h2>
+                    <p class="slider__parrafo">Ven y busca las mejores tijeras de poda, cosecha y tijerones de dos manos al mejor precio y de las mejores marcas observa nuestro catalogo.</p>
+                    <input class="slider__boton" type="button" value="Ver más">
+                </div>
+                <img class="slider__imagen" src="/img/sld3.jpg" alt="tijeras de poda">
+            </picture>
+
+            <div class="slider__navegacion">
+                <label for="radio1" class="slider__btnRadio1 slider__btnRadio--margin slider__btnRadio--hover"></label>
+                <label for="radio2" class="slider__btnRadio2 slider__btnRadio--margin slider__btnRadio--hover"></label>
+                <label for="radio3" class="slider__btnRadio3 slider__btnRadio--margin slider__btnRadio--hover"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

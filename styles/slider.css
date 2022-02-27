@@ -1,0 +1,195 @@
+/*Carrusel de imagenes de la pagina Inicio*/
+.slider{
+    width: 100%;
+    margin-top: 2%;
+    height: auto;
+    overflow: hidden;
+}
+.slider__slides{
+    width: 500%;
+    display: flex;
+    align-items: flex-end;
+}
+.slider__slides > input{
+    display: none;
+}
+.slider__contenedor-imagen{
+    width: 100vw;
+    height: auto;
+    transition: 2s;
+    position: relative;
+}
+/*Estilos del contendor de la informacion*/
+.slider__contenedor--info{
+    position: absolute;
+    background: linear-gradient(rgba(70, 70, 70, 0),#000);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 6%;
+}
+.slider__titulo, .slider__parrafo{
+    color:#fff;
+    text-align: center;
+}
+.slider__titulo{
+    font-size: 10vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.slider__parrafo{
+    font-size: 4.2vw;
+    margin: 3%;
+    font-family: Arial;
+}
+.slider__boton{
+    width: 25%;
+    height: auto;
+    padding: 5px;
+    color: #fff;
+    margin: 0px auto;
+    border: 2px solid var(--color-primario);
+    background: rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-family: Cambria;
+    font-size: 4vw;
+}
+/*Estilos de la Navegacion*/
+.slider__navegacion{
+    width: 100vw;
+    height: 35px;
+    margin-bottom: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__navegacion label{
+    border: 2px solid var(--color--navegacion-Slider);
+    border-radius: 10px;
+    background: var(--color--navegacion-Slider);
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.slider__btnRadio--margin:not(:last-child){
+    margin-right: 15px;
+}
+/*Tramsicion de imagenes*/
+#radio1:checked ~ .firts{
+    margin-left: 0%;
+}
+#radio2:checked ~ .firts{
+    margin-left: -20%;
+}
+#radio3:checked ~ .firts{
+    margin-left: -40%;
+}
+/*fondo a los botones de navegacion al hacer click*/
+#radio1:checked ~ .slider__navegacion .slider__btnRadio1{
+    background: #fff;
+    border: 2px solid #fff;
+}
+#radio2:checked ~ .slider__navegacion .slider__btnRadio2{
+    background: #fff;
+    border: 2px solid #fff;
+}
+#radio3:checked ~ .slider__navegacion .slider__btnRadio3{
+    background: #fff;
+    border: 2px solid #fff;
+}
+/*Media Queries*/
+/*---------------TABLET---------------*/
+@media screen and (min-width:490px) {
+    .slider{
+        height: 320px;
+    }
+    .slider__contenedor-imagen{
+        width: 100vw;
+        height: 320px;
+    }
+    .slider__imagen{
+        height: 100%;
+        object-fit: cover;
+        object-position: center 70%;
+    }
+    /*Estilos del contenedor info*/
+    .slider__contenedor--info{
+        padding-top: 3%;
+    }
+    .slider__titulo{
+        font-size: 40pt;
+    }
+    .slider__parrafo{
+        margin: 2%;
+        font-size: 16.5pt;
+    }
+    .slider__boton{
+        width: 18%;
+        height: auto;
+        padding: 1%;
+        font-size: 15pt;
+    }
+    /*Nagacion Slider*/
+    .slider__navegacion{
+        margin-bottom: 10px;
+    }
+    .slider__navegacion label{
+        padding: 6px;
+    }
+}
+/*----------- Ordenadores o Laptops -----------*/
+@media screen and (min-width:1024px) {
+    .slider{
+        width: 75%;
+        max-width: var(--ancho-maximo-pagWeb);
+        margin: auto;
+        height: 300px;
+    }
+    .slider__slides{
+        height: inherit;
+    }
+    .slider__contenedor-imagen{
+        width: 75vw;
+        max-width: var(--ancho-maximo-pagWeb);
+        height: 100%;
+    }
+    .slider__imagen{
+        object-fit: cover;
+    }
+    .slider__btnRadio--hover:hover{
+        background: #fff;
+        border: 2px solid #fff;
+    }
+    /*Estilos del contenedor info*/
+    .slider__contenedor--info{
+        padding: 2%;
+        max-width: var(--ancho-maximo-pagWeb);
+    }
+    .slider__titulo, .slider__parrafo{
+        text-align: left;
+    }
+    .slider__titulo{
+        font-size: 45pt;
+    }
+    .slider__parrafo{
+        font-size: 18pt;
+    }
+    .slider__boton{
+        width: 15%;
+        max-width: 115px;
+        padding: 5px;
+        font-size: 15pt;
+        margin: 0;
+    }
+    /*Nagacion Slider*/
+    .slider__navegacion label{
+        border-radius: 14px;
+        padding: 7px;
+    }
+    .slider__navegacion{
+        width: 75vw;
+        max-width: var(--ancho-maximo-pagWeb);
+    }
+}

@@ -1,0 +1,125 @@
+@import url(/styles/slider.css);
+@import url(/styles/formulario.css);
+@import url(/styles/menu.css);
+@import url(/styles/Servicios.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body img{
+    width: 100%;
+    height: auto;
+}
+/*Fuentes de letras*/
+@font-face {
+    font-family: "Humnst777 Blk BT";
+    src: url("/font/humnst777-blk-bt-black.ttf");
+}
+
+:root{
+    /*Paleta de colores del sitio web*/
+    --color-primario:rgb(28,128,247);
+    --color-segundario: rgb(9,76,242);
+    --color-lineas-1-subtitulos: rgb(130,225,255);
+    --color-terciario: rgb(14,48,240);
+    --color-lineas-servicios: var(--color-primario);
+    --color-text-boton-formulario: rgb(255,125,26);
+    --color-boton-masInformacion: rgb(35,90,157);
+    --color--navegacion-Slider: #bcbcbc;
+    /*Tamaños o números importantes*/
+    --ancho-maximo-pagWeb: 1230px;
+
+}
+#menu__check{
+    display: none;
+}
+
+/*---- HEADER (encabezado) ----*/
+.encabezado{
+    width: 100%;
+    background: var(--color-primario);
+    padding: 1% 0% 4% 0%;
+    position: relative;
+    z-index: -12;
+}
+.encabezado__contenedor--info{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.encabezado__btnMenu{
+    width: 4.5%;
+    display: none;
+}
+.encabezado__info{
+    display: flex;
+    align-items: center;
+}
+.encabezado__icon{
+    color: rgb(16, 48, 129);
+    height: auto;
+    margin: 8px 10px;
+    font-size: 4vw;
+}
+.encabezado__text{
+    font-family: 'Segoe UI';
+    color: #fff;
+    font-size: 4vw;
+}
+.encabezado::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    border-radius: 700px/60px;
+    position: absolute;
+    /*Colocamos el pseudoelemento por la mitad desde contando desde abajo*/
+    bottom: -18px
+}
+/*Media Queries*/
+/*----------- Tablet -----------*/
+@media screen and (min-width:490px) {
+    .encabezado{
+        z-index: 0;
+        padding: 0.5%;
+    }
+    .encabezado::after{
+        display: none;
+    }
+    .encabezado__btnMenu{
+        display: block;
+        box-sizing: content-box;
+        padding: 0px 10px;   
+    }
+    .encabezado__icon{
+        font-size: 2vw;
+    }
+    .encabezado__text{
+        font-size: 2vw;
+    }
+}
+/*----------- Ordenadores o Laptops -----------*/
+@media screen and (min-width:1024px) {
+    .encabezado{
+        display: flex;
+        justify-content: center;
+    }
+    .encabezado__contenedor--info{
+        width: 80%;
+        justify-content: left;
+    }
+    .encabezado__btnMenu{
+        display: none;   
+    }
+    .encabezado__info{
+        margin-right: 2.5%;
+    }
+    .encabezado__icon{
+        font-size: 1vw;
+    }
+    .encabezado__text{
+        font-size: 1vw;
+    }
+}
