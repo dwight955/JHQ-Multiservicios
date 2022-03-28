@@ -1,11 +1,18 @@
-@import url(/styles/slider.css);
-@import url(/styles/formulario.css);
-@import url(/styles/menu.css);
-@import url(/styles/Servicios.css);
+@import url(/css/redesSociales.css);
+@import url(/css/slider.css);
+
+@import url(/css/formulario.css);
+@import url(/css/menu.css);
+@import url(/css/servicios.css);
+@import url(/css/footer.css);
+@import url(/css/nosotros.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
 }
 body img{
     width: 100%;
@@ -16,7 +23,10 @@ body img{
     font-family: "Humnst777 Blk BT";
     src: url("/font/humnst777-blk-bt-black.ttf");
 }
-
+@font-face {
+    font-family: "Century Gothic";
+    src: url("/font/911Fonts.com_CenturyGothicBold__-_911fonts.com_fonts_pMgo.ttf");
+}
 :root{
     /*Paleta de colores del sitio web*/
     --color-primario:rgb(28,128,247);
@@ -27,6 +37,8 @@ body img{
     --color-text-boton-formulario: rgb(255,125,26);
     --color-boton-masInformacion: rgb(35,90,157);
     --color--navegacion-Slider: #bcbcbc;
+    --color-footer: #272626;
+    --color-texto-footer: #C1C1C1;
     /*Tamaños o números importantes*/
     --ancho-maximo-pagWeb: 1230px;
 
@@ -34,14 +46,27 @@ body img{
 #menu__check{
     display: none;
 }
+/*psudoelementos curviados para los titulos*/
+.Nosotros__contenedor-info::after, .FormularioDeContacto__contenedor::after{
+    content: "";
+    width: 100vw;
+    height: 50px;
+    background: #fff;
+    border-radius: 700px/100px;
+    position: absolute;
+    top: -28px;
+}
 
+/*fuente de letra de los textos*/
+.Nosotros__subtitulo,.Nosotros__subtitulo-valores,.Nosotros__text-valor, .FormularioDeContacto-texto, .FormularioDeContacto-boton{
+    font-family: "Century Gothic";
+}
 /*---- HEADER (encabezado) ----*/
 .encabezado{
     width: 100%;
     background: var(--color-primario);
     padding: 1% 0% 4% 0%;
     position: relative;
-    z-index: -12;
 }
 .encabezado__contenedor--info{
     display: flex;
@@ -107,8 +132,9 @@ body img{
         justify-content: center;
     }
     .encabezado__contenedor--info{
-        width: 80%;
+        width: 75%;
         justify-content: left;
+        /* max-width: var(--ancho-maximo-pagWeb); */
     }
     .encabezado__btnMenu{
         display: none;   
@@ -123,3 +149,13 @@ body img{
         font-size: 1vw;
     }
 }
+/*Limitando el contenido con tanamaños fijos*/
+/*No seguir creciendo hasta el ancho inidicado*/
+/* @media screen and (min-width:1535px) {
+    .encabezado__icon{
+        font-size: 13pt;
+    }
+    .encabezado__text{
+        font-size: 13pt;
+    }
+} */

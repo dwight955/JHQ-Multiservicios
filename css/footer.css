@@ -1,0 +1,117 @@
+.footer{
+    width: 100vw;
+    background: var(--color-footer);
+    padding: 6% 5%;
+    display: flex;
+    flex-flow: column;
+}
+.footer__titulos, .footer__parrafo{
+    color: var(--color-texto-footer);
+    font-family: 'Segoe UI';
+    margin: 6% 0%;
+}
+.footer__redSocial > .fab, .footer__nombre-empresa, .footer__seccion > .fas{
+    color: #fff;
+    text-decoration: none;
+} 
+.footer__nombre-empresa{
+    font-family: 'Segoe UI';
+    font-size: 5.4vw;
+    border-bottom: 1px solid #707070;
+    padding: 15px 0px;
+}
+.footer__redSocial{
+    display: inline-block;
+    border-radius: 50%;
+    background: #5B5959;
+    transition: all .5s;
+    text-align: center;
+    margin-right: 10px;
+}
+.footer__redSocial:hover{
+    background: #3b3b3b;
+}
+.footer__redSocial > a{
+    display: block;
+    width: 44px;
+    height: 44px;
+    line-height: 45px;
+}
+.footer__seccion > .fas{
+    display: block;
+    margin: 10px;
+}
+/*Lista de servicios*/
+.footer__list-servicios{
+    padding-left: 15px;
+}
+.footer__item-servicio > a, .footer__item-servicio{
+    color: var(--color-texto-footer);
+    text-decoration: none;
+    font-family: 'Segoe UI';
+}
+.footer__item-servicio > a:hover{
+    text-decoration:underline;
+    color: aliceblue;
+}
+/*mapa google*/
+.footer__map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.footer__map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*-------------------------- Media Queries ------------------*/
+/*=============================TABLET==========================*/
+@media screen and (min-width:490px) {
+    .footer__contenedor-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer__seccion{
+        width: 31%;
+        margin: 0% 2%;
+    }
+    .footer__seccion > .fas{
+        font-size: 12pt;
+    }
+}
+/*-------------------------- Media Queries ------------------*/
+/*=============================ORDENADOR==========================*/
+@media screen and (min-width:1024px){
+    .footer{
+        align-items: center;
+        padding: 1% 1%;
+    }
+    .footer__contenedor-info{
+        width: 85%;
+    }
+    .footer__nombre-empresa{
+        font-size: 2vw;
+    }
+    .footer__titulos{
+        font-size: 1.5vw;
+    }
+    .footer__parrafo{
+        font-size: 1vw;
+    }
+    .footer__seccion > .fas{
+        font-size: 1vw;
+    }
+    .footer__item-servicio > a{
+        font-size: 1vw;
+    }
+    .footer__redSocial > a{
+        font-size: 1vw;
+        width: 2.5vw;
+        height: 5vh;
+        line-height: 5vh;
+    }
+}

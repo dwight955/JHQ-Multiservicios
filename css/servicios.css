@@ -1,0 +1,97 @@
+.Servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0% 12% 0%;
+}
+.Servicio__titulo,.Servicio__text, .FormularioDeContacto__titulo{
+    font-family: 'Century Gothic';
+    margin: 0;
+}
+.Servicio__titulo{
+    text-align: center;
+    font-size: 8vw;
+}
+.Servicio__titulo:first-child{
+    border-bottom: 5px solid var(--color-primario);
+}
+.servicio__contenedor-padre{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+}
+.Servicio__caja{
+    border: 1px solid gray;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin: 3% 0%;
+}
+.Servicio__img{
+    width: 100%;
+}
+.Servicio__degradado{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(70, 70, 70, 0),#000);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 4%;
+}
+.Servicio__text{
+    color: #fff;
+    width: 80%;
+    border-bottom: 3px solid var(--color-primario);
+    padding: 1% 0% 2% 0%;
+    font-size: 4.5vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*-------------------------- Media Queries ------------------*/
+/*=============================TABLET==========================*/
+@media screen and (min-width:490px) {
+    .Servicio{
+        margin: 5% 0% 16% 0%;
+        align-content: flex-start;
+    }
+    .Servicio__caja{
+        width: 48%;
+    }
+    .servicio__contenedor-padre{
+        justify-content: space-between;
+    }
+    .Servicio__text{
+        font-size: 2.5vw;
+    }
+    .Servicio__contenedor-titulo{
+        margin-bottom: 5%;
+    }
+    .Servicio__titulo{
+        font-size: 6vw;
+    }
+}
+/*-------------------------- Media Queries ------------------*/
+/*=============================ORDENADOR==========================*/
+@media screen and (min-width:1024px){
+    .Servicio{
+        margin: 2% 0% 8% 0%;
+    }
+    .servicio__contenedor-padre{
+        width: 75vw;
+    }
+    .Servicio__caja{
+        width: 32%;
+        margin: 1% 0%;
+    }
+    .Servicio__contenedor-titulo{
+        margin-bottom: 1%;
+    }
+    .Servicio__titulo{
+        font-size: 3vw;
+    }
+    .Servicio__text{
+        font-size: 1.3vw;
+    }
+}

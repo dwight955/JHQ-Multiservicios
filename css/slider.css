@@ -1,7 +1,7 @@
 /*Carrusel de imagenes de la pagina Inicio*/
 .slider{
     width: 100%;
-    margin-top: 2%;
+    margin-top: 20%;
     height: auto;
     overflow: hidden;
 }
@@ -54,6 +54,12 @@
     cursor: pointer;
     font-family: Cambria;
     font-size: 4vw;
+    transition: 0.3s;
+}
+.slider__boton:hover{
+    background:var(--color-primario);
+    border: 2px solid #fff;
+    color: #000;
 }
 /*Estilos de la Navegacion*/
 .slider__navegacion{
@@ -104,6 +110,7 @@
 @media screen and (min-width:490px) {
     .slider{
         height: 320px;
+        margin-top: 2%;
     }
     .slider__contenedor-imagen{
         width: 100vw;
@@ -142,18 +149,21 @@
 /*----------- Ordenadores o Laptops -----------*/
 @media screen and (min-width:1024px) {
     .slider{
-        width: 75%;
-        max-width: var(--ancho-maximo-pagWeb);
+        width: 75vw;
+        /* max-width: var(--ancho-maximo-pagWeb); */
         margin: auto;
-        height: 300px;
+        height: 45vh;
+    }
+    .slider__btnRadio--margin:not(:last-child){
+        margin-right: 1vw;
     }
     .slider__slides{
         height: inherit;
     }
     .slider__contenedor-imagen{
         width: 75vw;
-        max-width: var(--ancho-maximo-pagWeb);
-        height: 100%;
+        height: inherit;
+        /* max-width: var(--ancho-maximo-pagWeb); */
     }
     .slider__imagen{
         object-fit: cover;
@@ -164,32 +174,54 @@
     }
     /*Estilos del contenedor info*/
     .slider__contenedor--info{
-        padding: 2%;
-        max-width: var(--ancho-maximo-pagWeb);
+        padding: 0% 2%;
+        justify-content: center;
+        /* max-width: var(--ancho-maximo-pagWeb); */
     }
     .slider__titulo, .slider__parrafo{
         text-align: left;
     }
     .slider__titulo{
-        font-size: 45pt;
+        font-size: 3.3vw;
+    }
+    .slider__parrafo{
+        font-size: 1.5vw;
+        margin: 1.3% 0%;
+        width: 80%;
+    }
+    .slider__boton{
+        width: 10%;
+        /* max-width: 110px; */
+        padding: 0.5vw;
+        font-size: 1.5vw;
+        margin: 0;
+    }
+    /*Nagacion Slider*/
+    .slider__navegacion label{
+        border-radius: 2vw;
+        padding: .5vw;
+    }
+    .slider__navegacion{
+        width: 75vw;
+        height: auto;
+        margin-bottom: 1.5vh;
+        /* max-width: var(--ancho-maximo-pagWeb); */
+    }
+}
+/*Limitando el contenido con tanamaños fijos*/
+/*No seguir creciendo hasta el ancho inidicado*/
+/* @media screen and (min-width:1535px) {
+    .slider__titulo{
+        font-size: 40pt;
     }
     .slider__parrafo{
         font-size: 18pt;
+        margin:15px 20px 15px 0px;
     }
     .slider__boton{
-        width: 15%;
         max-width: 115px;
         padding: 5px;
         font-size: 15pt;
         margin: 0;
     }
-    /*Nagacion Slider*/
-    .slider__navegacion label{
-        border-radius: 14px;
-        padding: 7px;
-    }
-    .slider__navegacion{
-        width: 75vw;
-        max-width: var(--ancho-maximo-pagWeb);
-    }
-}
+} */

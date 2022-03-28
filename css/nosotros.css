@@ -1,0 +1,209 @@
+/*Estilos del bloque Nosotros*/
+.Nosotros{
+    width: 100%;
+}
+.Nosotros__valores, .Nosotros__contenedor-mision-vision{
+    margin-top: 5%;
+}
+.Nosotros__respuesta,.Nosotros__contenedor-mision-vision,.Nosotros__valores{
+    width: 90vw;
+}
+.Nosotros__pregunta{
+ margin-top: 4%;
+ text-align: center;
+ color: var(--color-segundario);
+ font-family: "Century Gothic";
+ font-size: 8vw;
+ position: relative;
+ z-index: 1;
+}
+.Nosotros__contenedor-info{
+  background: var(--color-primario);
+  padding: 10% 0% 0% 0%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Nosotros__contenedor-info::after{
+    display: block;
+}
+.Nosotros__respuesta{
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    font-size: 5vw;
+}
+.Nosotros__contenedor-mision-vision{
+    display: flex;
+    flex-direction: column;
+}
+.Nosotros__mision-vision{
+    text-align: center;
+    color: #fff;
+}
+.Nosotros__subtitulo{
+    font-size: 8vw;
+    margin: 2% 0%;
+}
+.Nosotros__parrafo{
+    font-family: Arial;
+    font-size: 5vw;
+    border-top: 5px solid var(--color-lineas-1-subtitulos);
+    border-bottom: 5px solid var(--color-lineas-1-subtitulos);
+    padding: 3% 0%;
+}
+
+.Nosotros__subtitulo-valores{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    font-size: 8vw;
+    width: fit-content;
+    margin: auto;
+}
+.Nosotros__subtitulo-valores:nth-child(1){
+    border-bottom: 5px solid var(--color-lineas-1-subtitulos);
+}
+.Nosotros__contenedor-item-valores{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.Nosotros__item-valor{
+    width: 48%;
+    margin-bottom: 5%;
+}
+.Nosotros__imagen-valor{
+    border-radius: 18px;
+    height: 18vh;
+}
+.Nosotros__text-valor{
+    color: #2F2E41;
+    font-size: 5vw;
+    text-align: center;
+}
+
+/*-------------------------- Media Queries ------------------*/
+/*=============================TABLET==========================*/
+@media screen and (min-width:490px) {
+    .Nosotros__contenedor-info::after{
+        display: none;
+    }
+    .Nosotros__pregunta{
+        font-size: 5vw;
+        margin-bottom: 4%;
+    }
+    .Nosotros__contenedor-info{
+        padding: 5% 0% 0% 0%;
+    }
+    .Nosotros__respuesta{
+        font-size: 3.5vw;
+    }
+    .Nosotros__contenedor-mision-vision{
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+    .Nosotros__mision-vision{
+        width: 45%;
+    }
+    .Nosotros__subtitulo{
+        font-size: 5.5vw;
+    }
+    .Nosotros__parrafo{
+        font-size: 2.5vw;
+        padding: 12px 0px;
+        height: auto;
+    }
+    .Nosotros__valores{
+        margin: 3% 0%;
+    }
+    .Nosotros__subtitulo-valores{
+        font-size: 6vw;
+    }
+    .Nosotros__contenedor-item-valores{
+        margin-top: 3%;
+    }
+    .Nosotros__item-valor{
+        width: 22%;
+        margin-bottom: 0%;
+    }
+    .Nosotros__imagen-valor{
+        height: 75%;
+    }
+    .Nosotros__text-valor{
+        font-size: 2.5vw;
+    }
+}
+/*-------------------------- Media Queries ------------------*/
+/*=============================ORDENADOR==========================*/
+@media screen and (min-width:1024px){
+    .Nosotros{
+        width: 100%;
+    }
+    .Nosotros__pregunta{
+        font-size: 2.5vw;
+        margin-bottom: 21px;
+        margin-top: 43px;
+    }
+    .Nosotros__contenedor-info{
+        padding: 1.8vw 0% 1.8vw 0%;
+    }
+    .Nosotros__respuesta{
+        font-size: 1.5vw;
+        width: 55%;
+    }
+    .Nosotros__contenedor-mv-valores{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .Nosotros__contenedor-mision-vision{
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        display: inline-flex;
+        margin-top: 0;
+    }
+    .Nosotros__mision-vision{
+        width: 85%;
+    }
+    .Nosotros__valores{
+        width: 30%;
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0% 0%;
+    }
+    .Nosotros__contenedor-item-valores{
+        width: 75%;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    .Nosotros__item-valor{
+        width: 40%;
+        margin-bottom: 1vw;
+    }
+    .Nosotros__imagen-valor{
+        height: 6.5vw;
+    }
+    .Nosotros__subtitulo{
+        font-size: 2.5vw;
+    }
+    .Nosotros__parrafo{
+        font-size: 1.2vw;
+    }
+    .Nosotros__subtitulo-valores{
+        font-size: 2vw;
+        margin: 1vw auto;
+    }
+    .Nosotros__text-valor{
+        font-size: 1vw;
+    }
+}
+/*Limitando el contenido con tanamaños fijos*/
+/*No seguir creciendo hasta el ancho inidicado*/
+@media screen and (min-width:1535px) {
+
+}

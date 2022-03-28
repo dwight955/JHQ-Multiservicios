@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9d62536be0.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/Principal.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <script src="/js/menuPegajoso.js"></script>
+    <!-- <script src="/js/TemporizadorSlider.js"></script> -->
+    <script src="/js/insertarTexto.js"></script>
+    <script src="/js/HidenCirculoRedesSociales.js"></script>
+    <title>JHQ Multiservicios - Inicio</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__contenedor--info">
+            <label class="encabezado__btnMenu" for="menu__check"><img src="/icon/Menu.png"></label>
+            <div class="encabezado__info">
+                <i class="encabezado__icon fas fa-phone-alt"></i>
+                <h4 class="encabezado__text">999 999 999</h4>
+            </div>
+            <div class="encabezado__info">
+                <i class="encabezado__icon fab fa-facebook-f"></i>
+                <h4 class="encabezado__text">JHQ Multiservicios</h4>
+            </div>
+            <div class="encabezado__info">
+                <i class="encabezado__icon fas fa-envelope-open-text"></i>
+                <h4 class="encabezado__text">JHQcontacto@gmail.com</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="menu" id="menu">
+        <picture class="menu__logo">
+            <a href="#"><img src="/svg/LogotipoJHQ2.svg" alt="JHQ Multiservicios"></a>
+        </picture>
+        <input id="menu__check" type="checkbox">
+        <label class="menu__label-sombra" for="menu__check"><span></span></label>
+        <ul class="menu__contenedor--items">
+            <picture class="menu__contenedor--btncerrar">
+                <label class="menu__btncerrar--img" for="menu__check">
+                    <img src="/icon/MenuCancelar.png" alt="" srcset="">
+                </label>
+            </picture>
+            <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Nosotros</a></li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Servicios <!--<i class="fas fa-chevron-down"></i>--></a>
+                <!-- <ul class="menu__submenu">
+                    <li class="menu__item"><a class="menu__link" href="#">Alquiler de herramientas industriales</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Venta de EPP</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Venta de tijeras para la agricultura y repuestos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Alquiler de mobiliario para eventos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Elaboración de planos para proyectos de obra</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Servicios Generales</a></li>
+                </ul> -->
+                
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
+        </ul>
+        <label class="menu__btnMenu" for="menu__check">
+            <img src="/icon/Menu.png">
+        </label>
+    </nav>
+    <div class="slider">
+        <div class="slider__slides">
+            <input type="radio" name="slider__radio" id="radio1">
+            <input type="radio" name="slider__radio" id="radio2">
+            <input type="radio" name="slider__radio" id="radio3">
+
+            <picture class="slider__contenedor-imagen firts">
+                <div class="slider__contenedor--info">
+                    <h2 class="slider__titulo">¿Qué es EPP?</h2>
+                    <p class="slider__parrafo">Los EPP son ideados para proteger al trabajador de uno o varios riesgos. Basicamente ofrecen seguridad para realizar una actividad laboral.</p>
+                    <input class="slider__boton" type="button" value="Ver más">
+                </div>
+                <img class="slider__imagen" src="/img/sld1.jpg" alt="epp">
+            </picture>
+            <picture class="slider__contenedor-imagen">
+                <div class="slider__contenedor--info">
+                    <h2 class="slider__titulo">Muebles para eventos</h2>
+                    <p class="slider__parrafo">Ofrecemos productos inmoviliarios de primer nivel, que mezclan creatividad, modernidad y elegancia, detalles que marcan la diferencia.</p>
+                    <input class="slider__boton" type="button" value="Ver más">
+                </div>
+                <img class="slider__imagen" src="/img/sld2.jpg" alt="alquiler mesas y sillas">
+            </picture>
+            <picture class="slider__contenedor-imagen">
+                <div class="slider__contenedor--info">
+                    <h2 class="slider__titulo">Tijeras de poda</h2>
+                    <p class="slider__parrafo">Ven y busca las mejores tijeras de poda, cosecha y tijerones de dos manos al mejor precio y de las mejores marcas observa nuestro catalogo.</p>
+                    <input class="slider__boton" type="button" value="Ver más">
+                </div>
+                <img class="slider__imagen" src="/img/sld3.jpg" alt="tijeras de poda">
+            </picture>
+
+            <div class="slider__navegacion">
+                <label for="radio1" class="slider__btnRadio1 slider__btnRadio--margin slider__btnRadio--hover"></label>
+                <label for="radio2" class="slider__btnRadio2 slider__btnRadio--margin slider__btnRadio--hover"></label>
+                <label for="radio3" class="slider__btnRadio3 slider__btnRadio--margin slider__btnRadio--hover"></label>
+            </div>
+        </div>
+    </div>
+    <section class="Nosotros">
+        <h2 class="Nosotros__pregunta">¿Por que JHQ Multiservicios?</h2>
+        <div class="Nosotros__contenedor-info">
+            <p class="Nosotros__respuesta">Más de 20 años de experiencia laborando multitud de servicios con personas especialistas en el rubro, dando así garantía de un buen trabajo o compra de articulos</p>
+            <div class="Nosotros__contenedor-mv-valores">
+                <div class="Nosotros__contenedor-mision-vision">
+                    <div class="Nosotros__mision-vision">
+                        <h1 class="Nosotros__subtitulo">Mision</h1>
+                        <p class="Nosotros__parrafo">JHQ Multiservicios labora para mejorar la calidad de vida de nuestros clientes y ofrecer más oportunidades de empleo a la población peruana</p>
+                    </div>
+                    <div class="Nosotros__mision-vision">
+                        <h1 class="Nosotros__subtitulo">Vision</h1>
+                        <p class="Nosotros__parrafo">Ser el centro de referencia en proveer variedad de servicios generales con un sello de calidad distintivo y a su vez aumentar la oportunidad de trabajo</p>
+                    </div>
+                </div>
+                <div class="Nosotros__valores">
+                    <div class="Nosotros__contenedor-subtitulo" id="Nosotros__subtitulo">
+                        <h1 class="Nosotros__subtitulo-valores">NUESTROS</h1>
+                        <h1 class="Nosotros__subtitulo-valores">VALORES</h1>
+                    </div>
+                    <div class="Nosotros__contenedor-item-valores">
+                        <picture class="Nosotros__item-valor">
+                            <img class="Nosotros__imagen-valor" src="/img/valor-buen-trato.png" alt="" srcset="">
+                            <h3 class="Nosotros__text-valor">Buen trato</h3>
+                        </picture>
+                        <picture class="Nosotros__item-valor">
+                            <img class="Nosotros__imagen-valor" src="/img/valor-puntualidad.png" alt="" srcset="">
+                            <h3 class="Nosotros__text-valor">Puntualidad</h3>
+                        </picture>
+                        <picture class="Nosotros__item-valor">
+                            <img class="Nosotros__imagen-valor" src="/img/valor-calidad.png" alt="" srcset="">
+                            <h3 class="Nosotros__text-valor">Calidad</h3>
+                        </picture>
+                        <picture class="Nosotros__item-valor">
+                            <img class="Nosotros__imagen-valor" src="/img/valor-responsabilidad.png" alt="" srcset="">
+                            <h3 class="Nosotros__text-valor">Responsabilidad</h3>
+                        </picture>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section class="Servicio">
+        <div class="Servicio__contenedor-titulo" id="Servicio__contenedor-titulo">
+            <h1 class="Servicio__titulo">NUESTROS</h1>
+            <h1 class="Servicio__titulo">SERVICIOS</h1>
+        </div>
+        <div class="servicio__contenedor-padre">
+            <picture class="Servicio__caja">
+                <img class="Servicio__img" src="/img/alquiler-industrial.jpg" alt="" srcset="">
+                <a href="#">
+                    <div class="Servicio__degradado">
+                        <span class="Servicio__text">Alquiler de herramientas industriales</span>
+                    </div>
+                </a>
+            </picture>
+            <picture class="Servicio__caja">
+                <img class="Servicio__img" src="/img/venta-epp.png" alt="" srcset="">
+                <a href="#">
+                    <div class="Servicio__degradado">
+                    <span class="Servicio__text">Venta de Equipo de Proteccion Personal (EPP)</span>
+                </div>
+                </a>
+            </picture>
+            <picture class="Servicio__caja">
+                <img class="Servicio__img" src="/img/venta-agricolas.png" alt="" srcset="">
+                <a href="#">
+                    <div class="Servicio__degradado">
+                    <span class="Servicio__text">Venta de tijeras para la agricultura y repuestos</span>
+                </div>
+                </a>
+            </picture>
+            <picture class="Servicio__caja">
+                <img class="Servicio__img" src="/img/alquiler-mobiliario .jpg" alt="" srcset="">
+                <a href="#">
+                    <div class="Servicio__degradado">
+                    <span class="Servicio__text">Alquiler de mobiliario para eventos</span>
+                </div>
+                </a>
+            </picture>
+            <picture class="Servicio__caja">
+                <img class="Servicio__img" src="/img/elaboracion-planos.jpg" alt="" srcset="">
+                <a href="#">
+                    <div class="Servicio__degradado">
+                    <span class="Servicio__text">Elaboración de planos para proyectos de obra</span>
+                </div>
+                </a>
+            </picture>
+            <picture class="Servicio__caja">
+                <img class="Servicio__img" src="/img/servicios-generales.jpg" alt="" srcset="">
+                <a href="#">
+                    <div class="Servicio__degradado">
+                    <span class="Servicio__text">Servicios Generales</span>
+                </div>
+                </a>
+            </picture>
+        </div>
+    </section>
+    <section class="FormularioDeContacto__contenedor">
+        <h1 class="FormularioDeContacto__titulo">CONTACTO</h1>
+        <div class="FormularioDeContacto__Contenedor-img-form">
+            <picture class="FormularioDeContacto__img">
+                <img src="/img/tecnico.png" alt="" srcset="">
+            </picture>
+            <form class="FormularioDeContacto">
+                <h3 class="FormularioDeContacto-texto">Nombre</h3>
+                <input class="FormularioDeContacto-captura-texto" type="text" name="nombre" id="nombre-contacto">
+                
+                <h3 class="FormularioDeContacto-texto">Apellido</h3>
+                <input class="FormularioDeContacto-captura-texto" type="text" name="apellido" id="apellido-contacto">
+                
+                <h3 class="FormularioDeContacto-texto">Email</h3>
+                <input class="FormularioDeContacto-captura-texto" type="email" name="email" id="email-contacto">
+                
+                <h3 class="FormularioDeContacto-texto">Mensaje</h3>
+                <textarea class="FormularioDeContacto-captura-textArea" name="textarea" rows="5" cols="30"></textarea>
+    
+                <input type="button" value="Enviar" class="FormularioDeContacto-boton" id="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <div class="redesSociales" id="redesSociales">
+        <input type="checkbox" name="btn-redes" id="btn-desplegar-redes">
+        <div class="redesSociales__contenedor-icon">
+            <a href="#" class="fab fa-facebook-f redesSociales__icon"></a>
+            <a href="#" class="fab fa-whatsapp redesSociales__icon"></a>
+            <a href="#" class="fab fa-tiktok redesSociales__icon"></a>
+        </div>
+        <div class="redesSociales__boton-desplegar">
+            <label for="btn-desplegar-redes" class="fas fa-plus"></label>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__contenedor-info">
+            <header class="footer__cabezera">
+                <h3 class="footer__nombre-empresa">JHQ MULTISERVICIOS</h3>
+            </header>
+            <div class="footer__contenedor-section">
+                <section class="footer__seccion">
+                    <h4 class="footer__titulos">ACERCA DE NOSOTROS</h4>
+                    <p class="footer__parrafo">JHQ Multiservicios es una organización con más de 20 años de experiencia ofreciendo calidad de servicio con ayuda de  especialistas en el rubro, comprometidos con cada labor que realizamos y adaptabilidad ante las exigencias del cliente.<br><br> Si buscas más información, contáctese con nosotros.      
+                    </p>
+                    <div class="footer__contendor-redes">
+                        <div class="footer__redSocial">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                        </div>
+                        <div class="footer__redSocial">
+                            <a href="#" class="fab fa-whatsapp"></a>
+                        </div>
+                        <div class="footer__redSocial">
+                            <a href="#" class="fab fa-tiktok"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer__seccion">
+                    <h4 class="footer__titulos">SERVICIOS</h4>
+                    <ul class="footer__list-servicios">
+                        <li class="footer__item-servicio"><a href="#">Alquiler de maquinaria pesada</a></li>
+                        <li class="footer__item-servicio"><a href="#">Venta de equipos de proteccion personal</a></li>
+                        <li class="footer__item-servicio"><a href="#">Venta de tijeras para la agricultura y repuestos</a></li>
+                        <li class="footer__item-servicio"><a href="#">Alquiler de mobiliario para eventos</a></li>
+                        <li class="footer__item-servicio"><a href="#">Elaboración de planos para proyectos de obra</a></li>
+                        <li class="footer__item-servicio"><a href="#">Servicios generales</a></li>
+                    </ul>
+                </section>
+                <section class="footer__seccion">
+                    <h4 class="footer__titulos">DATOS DE CONTACTO</h4>
+                    <i class="fas fa-map-marker-alt">&nbsp Direccion:</i>
+                    <div class="footer__map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.008254879618!2d-75.77491598555578!3d-14.076689786800504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e373309b41c1%3A0x1c4e8ac2f4f2d2f7!2sFerreteria%20jedy!5e0!3m2!1ses-419!2spe!4v1646941827738!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <i class="fas fa-envelope">&nbsp JHQContacto@gmail.com</i>
+                    <i class="fas fa-mobile-alt">&nbsp &nbsp 999 999 999</i>
+                </section>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

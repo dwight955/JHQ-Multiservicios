@@ -1,0 +1,46 @@
+#btn-desplegar-redes{
+    display: none;
+}
+.redesSociales{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 2;
+    transition: all .5s;
+}
+.redesSociales__icon, .fa-plus{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+}
+.redesSociales__icon{
+    background: var(--color-boton-masInformacion);
+    margin-bottom: -60px;
+    opacity: 0;
+    visibility: hidden;
+}
+.redesSociales__icon:hover{
+    background: #fff;
+    color: var(--color-boton-masInformacion);
+}
+#btn-desplegar-redes:checked~ .redesSociales__contenedor-icon > .redesSociales__icon{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.fa-plus{
+    cursor: pointer;
+    background: var(--color-segundario);
+    font-size: 23px;
+}
+#btn-desplegar-redes:checked~ .redesSociales__boton-desplegar > .fa-plus{
+    transform: rotate(137deg);
+    font-size: 25px;
+}

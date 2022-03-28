@@ -1,0 +1,129 @@
+.FormularioDeContacto__contenedor{
+    background: var(--color-primario);
+    padding: 12% 0% 5% 0%;
+    position: relative;
+    z-index: 1;
+}
+.FormularioDeContacto__img{
+    display: none;
+}
+.FormularioDeContacto__contenedor::after{
+    display: block;   
+}
+.FormularioDeContacto__titulo{
+    position: absolute;
+    font-size: 8.5vw;
+    top: -3.5%;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.FormularioDeContacto{
+    width: 90%;
+    margin: auto;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 8% 4% 4% 4%;
+}
+
+.FormularioDeContacto-texto{
+    color: var(--color-text-boton-formulario);
+    font-size: 5vw;
+    margin: 3% 0%;
+}
+.FormularioDeContacto-captura-texto{
+    width: 100%;
+    height: 7vh;
+    font-size: 4.8vw;
+}
+.FormularioDeContacto-captura-texto, .FormularioDeContacto-captura-textArea{
+    padding: 0px 5px 0 5px;
+    font-size: 5vw;
+}
+.FormularioDeContacto-captura-textArea{
+    resize: none;
+    width: 100%;
+    padding-top: 5px;
+}
+.FormularioDeContacto-boton{
+    width: 35%;
+    display: block;
+    padding: 5px;
+    background: var(--color-text-boton-formulario);
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px auto 0px auto;
+    font-size: 6vw;
+    cursor: pointer;
+}
+/*-------------------------- Media Queries ------------------*/
+/*=============================TABLET==========================*/
+@media screen and (min-width:490px) {
+    .FormularioDeContacto__contenedor{
+        padding: 5% 0% 5% 0%;
+    }
+    .FormularioDeContacto__contenedor::after{
+        display: none;
+    }
+    .FormularioDeContacto__titulo{
+        top: -10%;
+        left: 50%; 
+        transform: translateX(-50%);
+        font-size: 6.5vw;
+    }
+    .FormularioDeContacto{
+        width: 68%;
+        padding: 4% 4% 4% 4%;
+    }
+    .FormularioDeContacto-texto{
+        font-size: 4vw;
+    }
+    .FormularioDeContacto-captura-texto, .FormularioDeContacto-captura-textArea, .FormularioDeContacto-boton{
+        font-size: 3.5vw;
+    }
+}
+/*-------------------------- Media Queries ------------------*/
+/*=============================ORDENADOR==========================*/
+@media screen and (min-width:1024px){   
+    .FormularioDeContacto-captura-texto, .FormularioDeContacto-captura-textArea{
+        font-size: 1.2vw;
+    }
+    .FormularioDeContacto__contenedor{
+        padding: 2vw 0 2vw 0;
+    }
+    .FormularioDeContacto{
+        height: fit-content;
+        width: 28vw;
+        margin: 0;
+        padding: 1.5vw 1.5vw;
+        box-shadow: 5px 5px 10px black;
+    }
+    .FormularioDeContacto-captura-texto{
+        width: 100%;
+        height: 5vh;
+    }
+    .FormularioDeContacto__titulo{
+        font-size: 3.5vw;
+        top: -12%;
+    }
+    .FormularioDeContacto-texto{
+        font-size: 1.5vw;
+    }
+    .FormularioDeContacto__Contenedor-img-form{
+        display: flex;
+        justify-content: center;
+    }
+    .FormularioDeContacto__img{
+        display: block;
+        width: 14%;
+        height: 70vh;
+        margin-right: 3%;
+    }
+    .FormularioDeContacto__img > img{
+        height: 100%;
+    }
+    .FormularioDeContacto-boton{
+        font-size: 1.3vw;
+    }
+}
