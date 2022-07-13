@@ -35,11 +35,11 @@
     left: -100%;
     transition: all .5s;
     z-index: 2;
-    overflow: scroll;
 }
 .menu__item{
     border-bottom: 2px solid var(--color-primario);
     line-height: 5vw;
+    overflow: hidden;
 }
 .menu__link{
     text-decoration: none;
@@ -48,6 +48,7 @@
     font-size: 5vw;
     padding: 5% 5%;
     font-family: "Humnst777 Blk BT";
+    position: relative;
 }
 .menu__contenedor--btncerrar{
     display: flex;
@@ -79,6 +80,21 @@
 #menu__check:checked ~ .menu__contenedor--items{
     left: 0;
 }
+/*Accordion menu*/
+.menu__subitem{
+    border-top: 2px solid white;
+    background: white;
+}
+.menu__submenu{
+    overflow: scroll;
+    transition: 0.3s;
+    max-height: 0;
+}
+.menu__subitem a{
+    position: relative;
+    margin-left: 2em;
+    font-size: 4vw;
+}
 /*Media Queries*/
 /*----------- Tablet -----------*/
 @media screen and (min-width:490px) {
@@ -94,7 +110,7 @@
         display: none;
     }
     .menu__contenedor--items{
-        width: 55%;
+        width: 40%;
     }
     .menu__link{
         font-size: 2.7vw;
@@ -104,10 +120,17 @@
     .menu__btncerrar--img{
         width: 10%;
     }
+    .menu__subitem a{
+        position: relative;
+        margin-left: 2em;
+        font-size: 2vw;
+    }
     #menu__check:checked ~ .menu__label-sombra{
         opacity: 1;
         height: 100vh;
     }
+    
+    
 }
 /*----------- Ordenadores o Laptops -----------*/
 @media screen and (min-width:1024px) {
@@ -135,11 +158,11 @@
     }
     .menu__item{
         border: none;
-        line-height: 0vw;
+        line-height: normal;
     }
     .menu__link{
-        font-size: 1.4vw;
-        padding: 1.3vw;
+        font-size: 1.3vw;
+        padding: .8vw;
         border: 1px solid var(--color-primario);
     }
     .menu__link:hover{
@@ -147,6 +170,70 @@
         color: #fff;
         background: var(--color-primario)
     }
+    /*Accordion menu*/
+    .menu__submenu{
+        overflow-x: hidden;
+        transition: 0.3s;
+        max-height: 0;
+        position: absolute;
+        width: 15%;
+        display: inline-block;
+        list-style: none;
+        border-radius: 10px 10px;
+    }
+    .menu__item:hover .menu__submenu{
+        max-height: 40%;
+    }
+    .menu__subitem{
+        border-top: 1px solid rgb(8, 104, 160);
+        background: var(--color-primario);
+    }
+    .menu__subitem > .menu__sublink{
+        position: relative;
+        font-size: 1vw;
+        display: block;
+        width: auto;
+        margin-left: 0;
+        text-decoration: none;
+        color: white;
+        font-size: 10pt;
+        padding: 10px;
+        font-family: "Century Gothic";
+    }
+
+
+    /*---------Styles del Scrooll-------------*/
+
+    /* Tamaño del scroll */
+    .menu__submenu::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+   /* Estilos barra (thumb) de scroll */
+   .menu__submenu::-webkit-scrollbar-thumb {
+    background: rgba(59, 59, 59, 0.534);
+    border-radius: 4px;
+  }
+  
+  .menu__submenu::-webkit-scrollbar-thumb:active {
+    background-color: #27262659;
+  }
+  
+  .menu__submenu::-webkit-scrollbar-thumb:hover {
+    background: #3a393954;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+   /* Estilos track de scroll */
+   .menu__submenu::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+  }
+  
+  .menu__submenu::-webkit-scrollbar-track:hover, 
+  .menu__submenu:-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+  }
 }
 /*Limitando el contenido con tanamaños fijos*/
 /*No seguir creciendo hasta el ancho inidicado*/
