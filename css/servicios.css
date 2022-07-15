@@ -29,6 +29,7 @@
 }
 .Servicio__img{
     width: 100%;
+    transition: all 0.3s ease;
 }
 .Servicio__degradado{
     position: absolute;
@@ -85,6 +86,9 @@
         width: 32%;
         margin: 1% 0%;
     }
+    .Servicio__caja:hover .Servicio__img{
+        transform: scale(1.2);
+    }
     .Servicio__contenedor-titulo{
         margin-bottom: 1%;
     }
@@ -93,5 +97,10 @@
     }
     .Servicio__text{
         font-size: 1.3vw;
+        transition: all .3s;
+    }
+    .Servicio__caja:hover .Servicio__text{
+        text-decoration: underline;
+        margin-bottom: 1em;
     }
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/Principal.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <script src="/js/menuPegajoso.js"></script>
-    <!-- <script src="/js/TemporizadorSlider.js"></script> -->
+    <script src="/js/TemporizadorSlider.js"></script>
     <script src="/js/insertarTexto.js"></script>
     <script src="/js/HidenCirculoRedesSociales.js"></script>
     <title>JHQ Multiservicios - Inicio</title>
@@ -38,6 +38,7 @@
         <input id="menu__check" type="checkbox">
         <label class="menu__label-sombra" for="menu__check"><span></span></label>
         <ul class="menu__contenedor--items">
+            
             <picture class="menu__contenedor--btncerrar">
                 <label class="menu__btncerrar--img" for="menu__check">
                     <img src="/icon/MenuCancelar.png" alt="" srcset="">
@@ -46,8 +47,8 @@
             <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Nosotros</a></li>
             <li class="menu__item">
-                <a href="#" class="menu__link">Servicios <i class="fas fa-chevron-down"></i></a>
-                <ul class = "menu__submenu">
+                <a href="#" class="menu__link" onclick="desplegar()">Servicios <i class="fas fa-chevron-down"></i></a>
+                <ul class = "menu__submenu" id="contenedor-servicios">
                     <li class="menu__subitem"><a class="menu__sublink" href="#">Alquiler de herramientas industriales</a></li>
                     <li class="menu__subitem"><a class="menu__sublink" href="#">Venta de EPP</a></li>
                     <li class="menu__subitem"><a class="menu__sublink" href="#">Venta de tijeras para la agricultura y repuestos</a></li>
@@ -277,5 +278,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        let isDespegable = false;
+        function desplegar(){
+            let contentServ = document.getElementById('contenedor-servicios');
+            if(isDespegable != true){
+                contentServ.style.height="335px";
+                isDespegable = true;
+           }else{
+                contentServ.style.height="0px";
+                isDespegable = false;
+           }
+        }
+    </script>
 </body>
 </html>

@@ -82,18 +82,29 @@
 }
 /*Accordion menu*/
 .menu__subitem{
-    border-top: 2px solid white;
-    background: white;
+    border-top: 1px solid rgb(8, 104, 160);
+    background: var(--color-primario);
+}
+.menu__subitem:hover{
+    background: rgb(18, 78, 190);
+    text-decoration:underline;
 }
 .menu__submenu{
     overflow: scroll;
-    transition: 0.3s;
-    max-height: 0;
+    transition:all 0.3s;
+    height: 0px;
 }
-.menu__subitem a{
-    position: relative;
+.menu__subitem > .menu__sublink{
     margin-left: 2em;
-    font-size: 4vw;
+    display: block;
+    text-decoration: none;
+    font-size: 13pt;
+    padding: 15px;
+    font-family: "Century Gothic";
+    color: white;
+}
+#menu__check-servicios:checked ~ .menu__submenu{
+    height: auto;
 }
 /*Media Queries*/
 /*----------- Tablet -----------*/
@@ -120,17 +131,16 @@
     .menu__btncerrar--img{
         width: 10%;
     }
-    .menu__subitem a{
-        position: relative;
-        margin-left: 2em;
-        font-size: 2vw;
+    .menu__subitem > .menu__sublink{
+        margin-left: 1.5em;
+        font-size: 15pt;
+        padding: 12px;
+        line-height: normal;
     }
     #menu__check:checked ~ .menu__label-sombra{
         opacity: 1;
         height: 100vh;
     }
-    
-    
 }
 /*----------- Ordenadores o Laptops -----------*/
 @media screen and (min-width:1024px) {
@@ -174,7 +184,6 @@
     .menu__submenu{
         overflow-x: hidden;
         transition: 0.3s;
-        max-height: 0;
         position: absolute;
         width: 15%;
         display: inline-block;
@@ -182,12 +191,14 @@
         border-radius: 10px 10px;
     }
     .menu__item:hover .menu__submenu{
-        max-height: 40%;
+        height: 40%;
     }
     .menu__subitem{
         border-top: 1px solid rgb(8, 104, 160);
         background: var(--color-primario);
+        transition: all .3s ease;
     }
+    
     .menu__subitem > .menu__sublink{
         position: relative;
         font-size: 1vw;
@@ -202,7 +213,7 @@
     }
 
 
-    /*---------Styles del Scrooll-------------*/
+    /*---------Styles del Scrooll 1024px-------------*/
 
     /* Tamaño del scroll */
     .menu__submenu::-webkit-scrollbar {
