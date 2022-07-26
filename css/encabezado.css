@@ -1,0 +1,88 @@
+/*---- HEADER (encabezado) ----*/
+.encabezado{
+    width: 100%;
+    background: var(--color-primario);
+    padding: 1% 0% 4% 0%;
+    position: relative;
+}
+.encabezado__contenedor--info{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.encabezado__btnMenu{
+    width: 4.5%;
+    display: none;
+}
+.encabezado__info{
+    display: flex;
+    align-items: center;
+}
+.encabezado__icon{
+    color: rgb(16, 48, 129);
+    height: auto;
+    margin: 8px 10px;
+    font-size: 4vw;
+}
+.encabezado__text{
+    font-family: 'Segoe UI';
+    color: #fff;
+    font-size: 4vw;
+}
+.encabezado::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    border-radius: 700px/60px;
+    position: absolute;
+    /*Colocamos el pseudoelemento por la mitad desde contando desde abajo*/
+    bottom: -18px
+}
+/*Media Queries*/
+/*----------- Tablet -----------*/
+@media screen and (min-width:490px) {
+    .encabezado{
+        z-index: 0;
+        padding: 0.5%;
+    }
+    .encabezado::after{
+        display: none;
+    }
+    .encabezado__btnMenu{
+        display: block;
+        box-sizing: content-box;
+        padding: 0px 10px;   
+    }
+    .encabezado__icon{
+        font-size: 2vw;
+    }
+    .encabezado__text{
+        font-size: 2vw;
+    }
+}
+/*----------- Ordenadores o Laptops -----------*/
+@media screen and (min-width:1024px) {
+    .encabezado{
+        display: flex;
+        justify-content: center;
+    }
+    .encabezado__contenedor--info{
+        width: 75%;
+        justify-content: left;
+        /* max-width: var(--ancho-maximo-pagWeb); */
+    }
+    .encabezado__btnMenu{
+        display: none;   
+    }
+    .encabezado__info{
+        margin-right: 2.5%;
+    }
+    .encabezado__icon{
+        font-size: 1vw;
+    }
+    .encabezado__text{
+        font-size: 1vw;
+    }
+}
